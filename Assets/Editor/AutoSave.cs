@@ -1,29 +1,33 @@
-using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using UnityEngine;
+
 public static class AutoSaveOnRun
 {
     private const string MenuNameOn = "Tools/Auto Save/Enable";
     private const string MenuNameOff = "Tools/Auto Save/Disable";
+
     [MenuItem(MenuNameOn)]
     private static void EnableAutoSave()
     {
         EditorApplication.playModeStateChanged += AutoSave;
-        Debug.Log("×Ô¶¯±£´æÒÑÆôÓÃ");
+        Debug.Log("è‡ªåŠ¨ä¿å­˜å·²å¯ç”¨");
     }
+
     [MenuItem(MenuNameOff)]
     private static void DisableAutoSave()
     {
         EditorApplication.playModeStateChanged -= AutoSave;
-        Debug.Log("×Ô¶¯±£´æÒÑ½ûÓÃ");
+        Debug.Log("è‡ªåŠ¨ä¿å­˜å·²ç¦ç”¨");
     }
+
     private static void AutoSave(PlayModeStateChange state)
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode && !EditorApplication.isPlaying)
         {
             EditorSceneManager.SaveOpenScenes();
             AssetDatabase.SaveAssets();
-            Debug.Log("³¡¾°ºÍ×ÊÔ´ÒÑ×Ô¶¯±£´æ");
+            Debug.Log("åœºæ™¯å’Œèµ„æºå·²è‡ªåŠ¨ä¿å­˜");
         }
     }
 }
