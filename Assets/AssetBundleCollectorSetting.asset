@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 0
+  ShowEditorAlias: 1
+  UniqueBundleName: 0
+  Packages:
+  - PackageName: DefaultPackage
+    PackageDesc: 
+    EnableAddressable: 1
+    SupportExtensionless: 1
+    LocationToLower: 0
+    IncludeAssetGUID: 0
+    AutoCollectShaders: 1
+    IgnoreRuleName: NormalIgnoreRule
+    Groups:
+    - GroupName: code
+      GroupDesc: 
+      AssetTags: Necessary
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/MyAsset/Codes
+        CollectorGUID: 057b6a88a6ff32f478b5f4c3e89505f2
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: prefab
+      GroupDesc: 
+      AssetTags: zy
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/MyAsset/Prefabs
+        CollectorGUID: d84a15ca666db3046b3f784e8cd1b851
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: scene
+      GroupDesc: 
+      AssetTags: res
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/MyAsset/Scenes
+        CollectorGUID: 8e2d6e3a7e6f3b0489efb5c26444b6ec
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackSeparately
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: video
+      GroupDesc: 
+      AssetTags: res
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/MyAsset/Video
+        CollectorGUID: 01ca7c2b8e2589646bd046bca883cd6a
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackVideoFile
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: shader
+      GroupDesc: 
+      AssetTags: res
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/MyAsset/Shader
+        CollectorGUID: 7dc9d17f403955d4bbd190a9f0f7f40e
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackShader
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 

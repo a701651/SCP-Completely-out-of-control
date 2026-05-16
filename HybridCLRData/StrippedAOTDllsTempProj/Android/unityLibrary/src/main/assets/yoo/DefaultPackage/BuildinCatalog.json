@@ -1,0 +1,11 @@
+{
+    "FileVersion": "1.0.0",
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "2026-02-05-862",
+    "Wrappers": [
+        {
+            "BundleGUID": "9e6924141a77a9022ee4ccafb0fef218",
+            "FileName": "assets_myasset_codes_9e6924141a77a9022ee4ccafb0fef218.bundle"
+        }
+    ]
+}

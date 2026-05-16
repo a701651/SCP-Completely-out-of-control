@@ -1,0 +1,81 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void DownloadHandlerAssetBundle_Create_mAE1EAD7D5059AB28C1271055B8010DC7121E61C6 (void);
+extern void DownloadHandlerAssetBundle_CreateCached_m2223962440CA598D8360BBC6B0C7AB57DAA71C32 (void);
+extern void DownloadHandlerAssetBundle_InternalCreateAssetBundle_m563CE0AFADE34C6EC1DDFE3B548880E0194968B0 (void);
+extern void DownloadHandlerAssetBundle_InternalCreateAssetBundleCached_m31658EBFF60F6E044DEF618E94332377959B2850 (void);
+extern void DownloadHandlerAssetBundle__ctor_m48C37228D1A7F6B0CE2E3D1B65F49FE34DA4069F (void);
+extern void DownloadHandlerAssetBundle__ctor_m2568630BD53054B0B0CBE03F57F81D95EBEA46CB (void);
+extern void DownloadHandlerAssetBundle_GetData_m31E29D90C0EA4ACAF65EB86F423464FC46717B25 (void);
+extern void DownloadHandlerAssetBundle_GetText_m8E10F95D9293C3406521AD495600762CEC2E88DC (void);
+extern void DownloadHandlerAssetBundle_get_assetBundle_m9D07F738F7014C26AF2B7FD89132FD1CB5DDE0FE (void);
+extern void DownloadHandlerAssetBundle_set_autoLoadAssetBundle_m33EFE2889EEC8AC2C81066DB7FF415AA315B53AE (void);
+extern void DownloadHandlerAssetBundle_Create_Injected_m88D1234D91CBF580789F293D512C9D1DEB5228E4 (void);
+extern void DownloadHandlerAssetBundle_CreateCached_Injected_mC4131B0B66C49B4229B3D6DFC06F34CA694FC813 (void);
+extern void DownloadHandlerAssetBundle_get_assetBundle_Injected_mD80D9EA62E870B36DA6F9709DF189C8D79267B9D (void);
+extern void DownloadHandlerAssetBundle_set_autoLoadAssetBundle_Injected_mBDEE2F590F1EF2D3FE0E8BFF9112BAC1B0E58F45 (void);
+extern void BindingsMarshaller_ConvertToNative_m66DFFF1E86DCA6AF5E1BA34DB5AF24F65B8E903C (void);
+static Il2CppMethodPointer s_methodPointers[15] = 
+{
+	DownloadHandlerAssetBundle_Create_mAE1EAD7D5059AB28C1271055B8010DC7121E61C6,
+	DownloadHandlerAssetBundle_CreateCached_m2223962440CA598D8360BBC6B0C7AB57DAA71C32,
+	DownloadHandlerAssetBundle_InternalCreateAssetBundle_m563CE0AFADE34C6EC1DDFE3B548880E0194968B0,
+	DownloadHandlerAssetBundle_InternalCreateAssetBundleCached_m31658EBFF60F6E044DEF618E94332377959B2850,
+	DownloadHandlerAssetBundle__ctor_m48C37228D1A7F6B0CE2E3D1B65F49FE34DA4069F,
+	DownloadHandlerAssetBundle__ctor_m2568630BD53054B0B0CBE03F57F81D95EBEA46CB,
+	DownloadHandlerAssetBundle_GetData_m31E29D90C0EA4ACAF65EB86F423464FC46717B25,
+	DownloadHandlerAssetBundle_GetText_m8E10F95D9293C3406521AD495600762CEC2E88DC,
+	DownloadHandlerAssetBundle_get_assetBundle_m9D07F738F7014C26AF2B7FD89132FD1CB5DDE0FE,
+	DownloadHandlerAssetBundle_set_autoLoadAssetBundle_m33EFE2889EEC8AC2C81066DB7FF415AA315B53AE,
+	DownloadHandlerAssetBundle_Create_Injected_m88D1234D91CBF580789F293D512C9D1DEB5228E4,
+	DownloadHandlerAssetBundle_CreateCached_Injected_mC4131B0B66C49B4229B3D6DFC06F34CA694FC813,
+	DownloadHandlerAssetBundle_get_assetBundle_Injected_mD80D9EA62E870B36DA6F9709DF189C8D79267B9D,
+	DownloadHandlerAssetBundle_set_autoLoadAssetBundle_Injected_mBDEE2F590F1EF2D3FE0E8BFF9112BAC1B0E58F45,
+	BindingsMarshaller_ConvertToNative_m66DFFF1E86DCA6AF5E1BA34DB5AF24F65B8E903C,
+};
+static const int32_t s_InvokerIndices[15] = 
+{
+	14014,
+	12336,
+	4818,
+	1763,
+	4818,
+	2416,
+	11120,
+	11120,
+	11120,
+	8809,
+	14009,
+	12334,
+	16638,
+	15739,
+	16639,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAssetBundleModule_CodeGenModule;
+const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAssetBundleModule_CodeGenModule = 
+{
+	"UnityEngine.UnityWebRequestAssetBundleModule.dll",
+	15,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
