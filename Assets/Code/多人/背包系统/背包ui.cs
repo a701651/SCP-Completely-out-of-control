@@ -48,7 +48,6 @@ public class 背包ui : MonoBehaviour
 
     void Start()
     {
-        // yooAssets.Initialize();
         if (!YooAssets.Initialized)
         {
             StartCoroutine(Init());
@@ -59,24 +58,49 @@ public class 背包ui : MonoBehaviour
     {
         Debug.Log("初始化资源包");
         YooAssets.Initialize();
-        var package = YooAssets.CreatePackage("DefaultPackage");
+        // 创建默认的资源包
+        var package =
+            YooAssets.TryGetPackage("DefaultPackage") ?? YooAssets.CreatePackage("DefaultPackage");
         YooAssets.SetDefaultPackage(package);
-        // 离线模式
-        var fileSystemParams = FileSystemParameters.CreateDefaultBuildinFileSystemParameters();
+        // 编辑器
+        if (Application.isEditor)
+        {
+            Debug.Log("模拟构建资源包");
+            var buildResult = EditorSimulateModeHelper.SimulateBuild("DefaultPackage");
+            var packageRoot = buildResult.PackageRootDirectory;
+            var fileSystemParams = FileSystemParameters.CreateDefaultEditorFileSystemParameters(
+                packageRoot
+            );
 
-        var createParameters = new OfflinePlayModeParameters();
-        createParameters.BuildinFileSystemParameters = fileSystemParams;
+            var createParameters = new EditorSimulateModeParameters();
+            createParameters.EditorFileSystemParameters = fileSystemParams;
 
-        var initOperation = package.InitializeAsync(createParameters);
-        Debug.LogError("1");
-        yield return initOperation;
-        Debug.LogError("2");
+            var initOperation = package.InitializeAsync(createParameters);
+            yield return initOperation;
 
-        if (initOperation.Status == EOperationStatus.Succeed)
-            Debug.Log("资源包初始化成功！");
+            if (initOperation.Status == EOperationStatus.Succeed)
+                Debug.Log("资源包初始化成功！");
+            else
+                Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+        }
         else
-            Debug.LogError($"资源包初始化失败：{initOperation.Error}");
-        Debug.Log("获取资源版本");
+        {
+            Debug.Log("初始化资源包");
+            // 离线模式
+            var fileSystemParams1 = FileSystemParameters.CreateDefaultBuildinFileSystemParameters();
+
+            var createParameters1 = new OfflinePlayModeParameters();
+            createParameters1.BuildinFileSystemParameters = fileSystemParams1;
+
+            var initOperation1 = package.InitializeAsync(createParameters1);
+            yield return initOperation1;
+
+            if (initOperation1.Status == EOperationStatus.Succeed)
+                Debug.Log("资源包初始化成功！");
+            else
+                Debug.LogError($"资源包初始化失败：{initOperation1.Error}");
+            Debug.Log("获取资源版本");
+        }
         var operation = package.RequestPackageVersionAsync();
         yield return operation;
         string packageVersion;
@@ -122,7 +146,7 @@ public class 背包ui : MonoBehaviour
         // 如果没有物品信息,清空所有图标
         if (物品信息 == null || 物品信息.Count == 0)
         {
-            Debug.Log("背包ui: 当前没有物品信息,清空所有图标");
+            // Debug.Log("背包ui: 当前没有物品信息,清空所有图标");
             清空所有图标();
             return;
         }
@@ -146,7 +170,7 @@ public class 背包ui : MonoBehaviour
             if (子物体 == null)
                 continue;
 
-            Image 图标组件 = 子物体.GetComponent<Image>();
+            Image 图标组件 = 子物体.Find("物品图标").GetComponent<Image>();
             if (图标组件 == null)
                 continue;
 
@@ -161,7 +185,7 @@ public class 背包ui : MonoBehaviour
                         var 图片路径 = 物品表_物品.物品图标;
                         // 使用 LoadAssetAsync 加载 Sprite 资源
                         var package = YooAssets.GetPackage("DefaultPackage");
-                        var handle = package.LoadAssetAsync<Sprite>(图片路径);
+                        var handle = package.LoadAssetAsync<Texture2D>(图片路径);
 
                         handle.Completed += (operationHandle) =>
                         {
@@ -175,7 +199,12 @@ public class 背包ui : MonoBehaviour
                             {
                                 try
                                 {
-                                    图标Sprite = operationHandle.AssetObject as Sprite;
+                                    Texture2D texture = operationHandle.GetAssetObject<Texture2D>();
+                                    图标Sprite = Sprite.Create(
+                                        texture,
+                                        new Rect(0, 0, texture.width, texture.height),
+                                        new Vector2(0.5f, 0.5f)
+                                    );
                                 }
                                 catch (System.Exception e)
                                 {

@@ -83,23 +83,7 @@ public class 玩家物品同步 : NetworkBehaviour
         // 这里应该从实际的背包系统获取数据,而非硬编码
         if (!服务器物品.ContainsKey(玩家ID))
         {
-            // 创建一个示例物品信息（实际应从背包系统获取）
-            List<物品JSON信息> 新物品信息 = new List<物品JSON信息>();
-
-            // 添加示例物品信息（实际应从背包系统获取）
-            物品JSON信息 物品1 = new 物品JSON信息();
-            物品1.物品ID = 1;
-            物品1.使用次数 = 5;
-            物品1.冷却时间 = 10;
-            新物品信息.Add(物品1);
-
-            物品JSON信息 物品2 = new 物品JSON信息();
-            物品2.物品ID = 2;
-            物品2.使用次数 = 3;
-            物品2.冷却时间 = 20;
-            新物品信息.Add(物品2);
-
-            服务器物品[玩家ID] = 新物品信息;
+            服务器物品[玩家ID] = new List<物品JSON信息>();
         }
 
         // 将物品列表包装为可序列化的容器对象
@@ -114,7 +98,7 @@ public class 玩家物品同步 : NetworkBehaviour
         // 调试日志(仅服务器端输出)
         if (isServer)
         {
-            Debug.Log($"服务器同步玩家 {玩家ID} 的物品信息: {序列化数据}");
+            // Debug.Log($"服务器同步玩家 {玩家ID} 的物品信息: {序列化数据}");
         }
     }
 
@@ -132,9 +116,9 @@ public class 玩家物品同步 : NetworkBehaviour
         背包ui.更新背包UI(客户端物品);
 
         // 调试日志(仅客户端输出)
-        Debug.Log(
-            $"客户端收到物品信息: {JsonUtility.ToJson(new 物品列表容器 { 物品列表 = 客户端物品 })}"
-        );
+        // Debug.Log(
+        //     $"客户端收到物品信息: {JsonUtility.ToJson(new 物品列表容器 { 物品列表 = 客户端物品 })}"
+        // );
     }
 }
 
