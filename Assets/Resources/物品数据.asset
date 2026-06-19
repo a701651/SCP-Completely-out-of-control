@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244311aa8f928a04bb7099393d4f6fbc, type: 3}
+  m_Name: "\u7269\u54C1\u6570\u636E"
+  m_EditorClassIdentifier: 
+  Sheet1:
+  - id: 10000
+    item_name: "(test)\u5360\u4F4D\u7269\u4F531"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10001
+    item_name: "(test)\u5360\u4F4D\u7269\u4F532"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10002
+    item_name: "(test)\u5360\u4F4D\u7269\u4F533"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10003
+    item_name: "(test)\u5360\u4F4D\u7269\u4F534"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10004
+    item_name: "(test)\u5360\u4F4D\u7269\u4F535"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10005
+    item_name: "(test)\u5360\u4F4D\u7269\u4F536"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10006
+    item_name: "(test)\u5360\u4F4D\u7269\u4F537"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10007
+    item_name: "(test)\u5360\u4F4D\u7269\u4F538"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10008
+    item_name: "(test)\u5360\u4F4D\u7269\u4F539"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 
+  - id: 10009
+    item_name: "(test)\u5360\u4F4D\u7269\u4F5310"
+    item_type: 0
+    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
+    item_quality: 1
+    image: 

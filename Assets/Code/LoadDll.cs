@@ -36,6 +36,7 @@ public class LoadDll : MonoBehaviour
     public Text 下载进度条_百分比;
     public Slider 下载进度条_值;
     public GameObject 进入游戏按钮;
+    public GameObject 登录窗口;
 
     private ResourcePackage _defaultPackage;
     public static bool is_init = false;
@@ -583,7 +584,16 @@ public class LoadDll : MonoBehaviour
         // 初始化完成
         is_init = true;
         Debug.Log("初始化完成");
-        进入游戏按钮.SetActive(true);
+        // 判断是否登录
+        if (PlayerPrefs.HasKey("login_token"))
+        {
+
+        }
+        else
+        {
+            // 登录界面
+            登录窗口.SetActive(true);
+        }
     }
     #endregion
 }

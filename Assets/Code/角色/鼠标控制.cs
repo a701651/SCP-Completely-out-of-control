@@ -26,7 +26,7 @@ public class 鼠标控制 : MonoBehaviour
 
     private void on显示鼠标(InputAction.CallbackContext obj)
     {
-        Debug.Log("鼠标显示");
+        //Debug.Log("鼠标显示");
         // 显示鼠标
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -35,7 +35,7 @@ public class 鼠标控制 : MonoBehaviour
 
     private void on取消鼠标(InputAction.CallbackContext obj)
     {
-        Debug.Log("鼠标隐藏");
+        //Debug.Log("鼠标隐藏");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         is_鼠标 = false;

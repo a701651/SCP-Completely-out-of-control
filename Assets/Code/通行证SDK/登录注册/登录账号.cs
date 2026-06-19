@@ -67,7 +67,7 @@ public class 登录账号 : MonoBehaviour
     IEnumerator 登录()
     {
         UnityWebRequest www = UnityWebRequest.Get(
-            $"{PlayerPrefs.GetString("ServerUrl")}/login?username="
+            $"{PlayerPrefs.GetString("ServerUrl")}/api/user/login.php?username="
                 + 账号名.text
                 + "&password="
                 + 密码.text

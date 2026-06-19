@@ -12,7 +12,7 @@ public class get_版本号 : MonoBehaviour
 
     // 版本类型枚举
     [Header("版本类型")]
-    public VersionType versionType;
+    public static VersionType versionType;
 
     public enum VersionType
     {
@@ -24,6 +24,7 @@ public class get_版本号 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         启动页面ui.gameObject.SetActive(true);
         // 等待初始化完成
         StartCoroutine(WaitForInitializationAndLoadAsset());
