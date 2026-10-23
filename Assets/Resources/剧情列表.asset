@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5545987b5d645f640b16ad50a338d687, type: 3}
+  m_Name: "\u5267\u60C5\u5217\u8868"
+  m_EditorClassIdentifier: 
+  "\u5267\u60C5":
+  - id: 10001
+    type: 1
+    next: 10002
+    chapter: 10001
+    name: "\uFF1F\uFF1F\uFF1F"
+    description: "\u7EE7\u7EED\u5411\u524D\uFF0C\u63A2\u7D22\u5468\u56F4\u533A\u57DF"
+    chat_id: 0
+    location_id: 0
+  - id: 10002
+    type: 0
+    next: 10003
+    chapter: 10001
+    name: "\uFF1F\uFF1F\uFF1F"
+    description: "\u4E0E\u6307\u6325\u5B98\u5BF9\u8BDD"
+    chat_id: 10001
+    location_id: 0
+  - id: 10003
+    type: 1
+    next: 10005
+    chapter: 10001
+    name: "\u8FDB\u5165\u8BBE\u65BD"
+    description: "\u7EE7\u7EED\u5411\u524D\uFF0C\u63A2\u7D22\u5468\u56F4\u533A\u57DF"
+    chat_id: 0
+    location_id: 0
+  "\u5BF9\u8BDD":
+  - id: 10001
+    type: 0
+    next: 10002
+    name: MTF Epsilon-11 Commander
+    content: "\u4F60\u6765\u4E86"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10002
+    type: 0
+    next: 10003
+    name: MTF Epsilon-11 Commander
+    content: "\u542C\u7740\u5BB6\u4F19\uFF0C\u5C31\u5DEE\u4F60\u4E00\u4E2A\u4E86\u5176\u4ED6\u4EBA\u90FD\u5728\u4E0B\u9762\u7B49\u5462"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10003
+    type: 0
+    next: 10004
+    name: MTF Epsilon-11 Commander
+    content: "\u8FD9\u6B21\u7684\u4EFB\u52A1\u4F60\u5E94\u8BE5\u5DF2\u7ECF\u5728\u4E2A\u4EBA\u7EC8\u7AEF\u54EA\u91CC\u770B\u89C1\u4E86\u5427"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10004
+    type: 0
+    next: 10005
+    name: I
+    content: "\u8FD9\u662F...\u54EA\u91CC..."
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10005
+    type: 0
+    next: 10006
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB95"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10006
+    type: 0
+    next: 10007
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB96"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10007
+    type: 0
+    next: 10008
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB97"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10008
+    type: 0
+    next: 10009
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB98"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10009
+    type: 0
+    next: 10010
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB99"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10010
+    type: 0
+    next: 10011
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB910"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10011
+    type: 0
+    next: 10012
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB911"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10012
+    type: 0
+    next: 10013
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB912"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10013
+    type: 0
+    next: 10014
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB913"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10014
+    type: 0
+    next: 10015
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB914"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10015
+    type: 0
+    next: 10016
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB915"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10016
+    type: 0
+    next: 10017
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB916"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  - id: 10017
+    type: 0
+    next: 0
+    name: MTF Epsilon-11 Commander
+    content: "\u5185\u5BB917"
+    audio_path: 
+    animation_path: 
+    option1: 0
+    option2: 0
+    option3: 0
+    option4: 0
+  "\u9009\u9879":
+  - id: 10001
+    content: "\u5185\u5BB9"
+    next_id: 10001
+  "\u7AE0\u8282":
+  - id: 10001
+    type: 0
+    chapter: "\u5E8F\u7AE0"
+    page: "\u7B2C\u4E00\u5E55"
+    chapter_name: "\u521D\u6B21\u89C1\u9762"

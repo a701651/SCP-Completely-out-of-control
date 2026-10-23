@@ -1,0 +1,51 @@
+{
+    "FileVersion": 1,
+    "PackageName": "多人模式包",
+    "PackageVersion": "2026-10-17-1187",
+    "Entries": [
+        {
+            "BundleGuid": "0545dabf104e5040a0063b0302d55621",
+            "FileName": "0545dabf104e5040a0063b0302d55621.bundle"
+        },
+        {
+            "BundleGuid": "41a48dc2b5ae377cd69269b417996fb9",
+            "FileName": "41a48dc2b5ae377cd69269b417996fb9.bundle"
+        },
+        {
+            "BundleGuid": "43f3bf15ada967d04fe57a0ecb4a76ca",
+            "FileName": "43f3bf15ada967d04fe57a0ecb4a76ca.bundle"
+        },
+        {
+            "BundleGuid": "4f8d2ddf838e1edc46ecceffb0910ebf",
+            "FileName": "4f8d2ddf838e1edc46ecceffb0910ebf.bundle"
+        },
+        {
+            "BundleGuid": "67faf90a9af64695a5ffd749d26c09ed",
+            "FileName": "67faf90a9af64695a5ffd749d26c09ed.bundle"
+        },
+        {
+            "BundleGuid": "8403df111b8a3cb4418fcc734b392940",
+            "FileName": "8403df111b8a3cb4418fcc734b392940.bundle"
+        },
+        {
+            "BundleGuid": "84fcd355312b50f1899e7f3342520105",
+            "FileName": "84fcd355312b50f1899e7f3342520105.bundle"
+        },
+        {
+            "BundleGuid": "9e0abfc4d3eaac013337037fa0e0bb93",
+            "FileName": "9e0abfc4d3eaac013337037fa0e0bb93.bundle"
+        },
+        {
+            "BundleGuid": "ab640950d605a5e1b606a5f0addb65e3",
+            "FileName": "ab640950d605a5e1b606a5f0addb65e3.bundle"
+        },
+        {
+            "BundleGuid": "deac53ecb5d0230560395475044b6231",
+            "FileName": "deac53ecb5d0230560395475044b6231.bundle"
+        },
+        {
+            "BundleGuid": "fcba2350e3e94cc2161a8a3c9c393072",
+            "FileName": "fcba2350e3e94cc2161a8a3c9c393072.bundle"
+        }
+    ]
+}

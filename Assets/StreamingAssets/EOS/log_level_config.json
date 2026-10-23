@@ -1,0 +1,141 @@
+{
+  "LogCategoryLevelPairs": [
+    {
+      "Category": "Core",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Auth",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Friends",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Presence",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "UserInfo",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "HttpSerialization",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Ecom",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "P2P",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Sessions",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "RateLimiter",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "PlayerDataStorage",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Analytics",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Messaging",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Connect",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Overlay",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Achievements",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Stats",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Ui",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Lobby",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Leaderboards",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Keychain",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "IntegratedPlatform",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "TitleStorage",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Mods",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "AntiCheat",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Reports",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Sanctions",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "ProgressionSnapshots",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Kws",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Rtc",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "RTCAdmin",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "CustomInvites",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "Http",
+      "Level": "VeryVerbose"
+    },
+    {
+      "Category": "AllCategories",
+      "Level": "VeryVerbose"
+    }
+  ],
+  "schemaVersion": "1.0"
+}
