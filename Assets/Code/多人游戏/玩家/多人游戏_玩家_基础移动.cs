@@ -63,7 +63,6 @@ public class 多人游戏_玩家_基础移动 : MonoBehaviour
         _inputActions.Player.Move.performed -= OnMove;
         _inputActions.Player.Move.canceled -= OnMove;
         _inputActions.Player.Move.Disable();
-
         if (_inputActions.Player.Look != null)
         {
             _inputActions.Player.Look.performed -= OnLook;
@@ -90,15 +89,8 @@ public class 多人游戏_玩家_基础移动 : MonoBehaviour
 
     IEnumerator Init()
     {
-        while (!_root.是否网络系统初始化完成)
-        {
-            yield return null;
-        }
-        if (!_root.是否本地玩家)
-        {
-            // 删除代码
-            Destroy(this);
-        }
+        // 等待1秒
+        yield return new WaitForSeconds(1f);
         
         _inputActions = new InputSystem_Actions();
 
@@ -124,6 +116,13 @@ public class 多人游戏_玩家_基础移动 : MonoBehaviour
         // UI 命中检测的 PointerEventData 复用
         if (EventSystem.current != null)
             _事件数据 = new PointerEventData(EventSystem.current);
+        
+        // 非本地
+        if (!_root.是否本地玩家)
+        {
+            // 删除代码
+            Destroy(this);
+        }
     }
 
     // ============================================================

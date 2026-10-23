@@ -30,11 +30,56 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F"
-        CollectorGUID: 0fc1d94944887cb48b7338c7230dbfa9
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u56FE\u50CF"
+        CollectorGUID: 17e7c346653fae84dba85d74a351638c
         CollectorType: 0
         AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u573A\u666F"
+        CollectorGUID: e2aa44ac2221a2846824497ce3a4551f
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u6A21\u578B"
+        CollectorGUID: 57a56256b6188f345b2a085cba2b33fd
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u9884\u5236\u4F53"
+        CollectorGUID: c842b62bf73870c4796a14c7d042a46b
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/Shader"
+        CollectorGUID: 53beb5ffe07596a42b215bf70755ebc2
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Code
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/Code"
+        CollectorGUID: b386206a349a4d0439d655c8ea1064ad
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackRawFile
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 

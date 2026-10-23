@@ -20,7 +20,7 @@ public class 多人游戏_创建_对局 : MonoBehaviour
                 _多人游戏管理器.StartServer();
                 break;
             case 多人游戏管理器.启动模式_Type.主机:
-                _多人游戏管理器.StartServer();
+                _多人游戏管理器.StartHost();
                 break;
             default:
                 break;
