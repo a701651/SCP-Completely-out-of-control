@@ -23,53 +23,29 @@ MonoBehaviour:
     item_name: "(test)\u5360\u4F4D\u7269\u4F532"
     item_type: 0
     item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
+    item_quality: 2
     image: 
   - id: 10002
     item_name: "(test)\u5360\u4F4D\u7269\u4F533"
     item_type: 0
     item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
+    item_quality: 3
     image: 
   - id: 10003
     item_name: "(test)\u5360\u4F4D\u7269\u4F534"
     item_type: 0
     item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
+    item_quality: 4
     image: 
   - id: 10004
     item_name: "(test)\u5360\u4F4D\u7269\u4F535"
     item_type: 0
     item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
+    item_quality: 5
     image: 
   - id: 10005
     item_name: "(test)\u5360\u4F4D\u7269\u4F536"
     item_type: 0
     item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
-    image: 
-  - id: 10006
-    item_name: "(test)\u5360\u4F4D\u7269\u4F537"
-    item_type: 0
-    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
-    image: 
-  - id: 10007
-    item_name: "(test)\u5360\u4F4D\u7269\u4F538"
-    item_type: 0
-    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
-    image: 
-  - id: 10008
-    item_name: "(test)\u5360\u4F4D\u7269\u4F539"
-    item_type: 0
-    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
-    image: 
-  - id: 10009
-    item_name: "(test)\u5360\u4F4D\u7269\u4F5310"
-    item_type: 0
-    item_description: "\uFF08test\uFF09\u7269\u54C1\u63CF\u8FF0"
-    item_quality: 1
+    item_quality: 6
     image: 
