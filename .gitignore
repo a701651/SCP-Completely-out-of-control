@@ -108,3 +108,9 @@ InitTestScene*.unity*
 
 # 打包资源
 /[Aa]ssets/[Ss]treamingAssets/yoo/
+
+# .idea
+.idea/
+
+# .vscode
+.vscode/
