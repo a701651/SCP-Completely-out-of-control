@@ -1,0 +1,592 @@
+{
+    "Summary": {
+        "YooVersion": "3.0.5",
+        "UnityVersion": "6000.0.75f1",
+        "BuildDate": "2026/10/24 19:11:20",
+        "BuildSeconds": 5,
+        "BuildTarget": 19,
+        "BuildPipeline": "ScriptableBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "多人模式包",
+        "BuildPackageVersion": "2026-10-24-1151",
+        "BuildPackageNote": "2026/10/24 19:11:14",
+        "UniqueBundleName": false,
+        "EnableAddressable": true,
+        "SupportExtensionless": true,
+        "LocationToLower": false,
+        "IncludeAssetGuid": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": true,
+        "UseAssetDependencyDB": true,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionServicesClassName": "YooAsset.Editor.EncryptionNone",
+        "ManifestProcessServicesClassName": "YooAsset.Editor.ManifestEncryptorNone",
+        "ManifestRestoreServicesClassName": "YooAsset.Editor.ManifestDecryptorNone",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": false,
+        "ReplaceAssetPathWithAddress": false,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "unityshaders.bundle",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 20,
+        "MainAssetTotalCount": 12,
+        "AllBundleTotalCount": 15,
+        "AllBundleTotalSize": 8646045,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/HotUpdata/多人模式/Code/mscorlib.dll.bytes",
+            "AssetGuid": "122e3628494e9d04b9ad2c83f86d6ce6",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_code_mscorlib_dll_bytes.rawfile",
+            "MainBundleSize": 1029446,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "System.Core.dll",
+            "AssetPath": "Assets/HotUpdata/多人模式/Code/System.Core.dll.bytes",
+            "AssetGuid": "8eafea6f05337414aa6279a2c15da26e",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_code_system_core_dll_bytes.rawfile",
+            "MainBundleSize": 51684,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "System.dll",
+            "AssetPath": "Assets/HotUpdata/多人模式/Code/System.dll.bytes",
+            "AssetGuid": "881785ca1d340d34a8d4591c0a051f7f",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_code_system_dll_bytes.rawfile",
+            "MainBundleSize": 285006,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "多人游戏_Code.dll",
+            "AssetPath": "Assets/HotUpdata/多人模式/Code/多人游戏_Code.dll.bytes",
+            "AssetGuid": "4cd44aaa5e78056429881976df912ad5",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_code_多人游戏_code_dll_bytes.rawfile",
+            "MainBundleSize": 3605,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "图像_遥感提示",
+            "AssetPath": "Assets/HotUpdata/多人模式/图像/遥感提示.png",
+            "AssetGuid": "c6ad2a0aa074b374d86e9cdafe4861f5",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_图像.bundle",
+            "MainBundleSize": 10503,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "场景_测试地图",
+            "AssetPath": "Assets/HotUpdata/多人模式/场景/测试地图.unity",
+            "AssetGuid": "b7c41275121b91a42a6e19e60205eb74",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_场景.bundle",
+            "MainBundleSize": 22455,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/图像/遥感提示.png",
+                    "AssetGUID": "c6ad2a0aa074b374d86e9cdafe4861f5"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/模型/门/贴图/门1 1.png",
+                    "AssetGUID": "a3813c230b9af0c4891a5d3b7805448d"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/模型/门/门.fbx",
+                    "AssetGUID": "61ac241734b48424f91fb2537a9eaab5"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/预制体/装备选项.prefab",
+                    "AssetGUID": "9f010a26d078e9e478ed6d6c16c201ed"
+                },
+                {
+                    "AssetPath": "Assets/Resources/图片/圆.png",
+                    "AssetGUID": "6e6a50c9cc595b94281c94114d751861"
+                },
+                {
+                    "AssetPath": "Assets/Resources/图片/按键.png",
+                    "AssetGUID": "269d25107a0232e4fa77917900cb3180"
+                },
+                {
+                    "AssetPath": "Assets/Resources/图片/描边.png",
+                    "AssetGUID": "4ab5a4b13f82f2948a2a5c5df1615f98"
+                },
+                {
+                    "AssetPath": "Assets/Resources/字体/Furore/Furore-2.otf",
+                    "AssetGUID": "d3c7203d0fcb48f40bad0fb56e34c555"
+                },
+                {
+                    "AssetPath": "Assets/Resources/字体/阿里巴巴普惠体/Alibaba-PuHuiTi-Bold.ttf",
+                    "AssetGUID": "69130479c5a74f24b92763207a78f341"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions",
+                    "AssetGUID": "ca9f5fa95ffab41fb9a615ab714db018"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat",
+                    "AssetGUID": "31321ba15b8f8eb4c954353edc038b1d"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ],
+            "DependBundles": [
+                "assets_hotupdata_多人模式_图像.bundle",
+                "assets_hotupdata_多人模式_模型_门.bundle",
+                "assets_hotupdata_多人模式_模型_门_贴图.bundle",
+                "assets_hotupdata_多人模式_预制体.bundle",
+                "share_assets_resources_图片.bundle",
+                "share_assets_resources_字体_furore.bundle",
+                "share_assets_resources_字体_阿里巴巴普惠体.bundle",
+                "share_packages_com_unity_inputsystem_inputsystem_plugins_playerinput.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "贴图_门1 1",
+            "AssetPath": "Assets/HotUpdata/多人模式/模型/门/贴图/门1 1.png",
+            "AssetGuid": "a3813c230b9af0c4891a5d3b7805448d",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_模型_门_贴图.bundle",
+            "MainBundleSize": 26047,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "贴图_门1",
+            "AssetPath": "Assets/HotUpdata/多人模式/模型/门/贴图/门1.png",
+            "AssetGuid": "b114a17d392cdba4db849b262b51b5a2",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_模型_门_贴图.bundle",
+            "MainBundleSize": 26047,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "门_门",
+            "AssetPath": "Assets/HotUpdata/多人模式/模型/门/门.fbx",
+            "AssetGuid": "61ac241734b48424f91fb2537a9eaab5",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_模型_门.bundle",
+            "MainBundleSize": 17592,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/模型/门/贴图/门1 1.png",
+                    "AssetGUID": "a3813c230b9af0c4891a5d3b7805448d"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ],
+            "DependBundles": [
+                "assets_hotupdata_多人模式_模型_门_贴图.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "预制体_游戏版本控制器",
+            "AssetPath": "Assets/HotUpdata/多人模式/预制体/游戏版本控制器.prefab",
+            "AssetGuid": "13d5a855f402daa4fa045ed94dfe67e2",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_预制体.bundle",
+            "MainBundleSize": 12165,
+            "DependAssets": [],
+            "DependBundles": [
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "预制体_玩家",
+            "AssetPath": "Assets/HotUpdata/多人模式/预制体/玩家.prefab",
+            "AssetGuid": "39b0f124911f42244946f33dfd4a4758",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_预制体.bundle",
+            "MainBundleSize": 12165,
+            "DependAssets": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat",
+                    "AssetGUID": "31321ba15b8f8eb4c954353edc038b1d"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ],
+            "DependBundles": [
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "预制体_装备选项",
+            "AssetPath": "Assets/HotUpdata/多人模式/预制体/装备选项.prefab",
+            "AssetGuid": "9f010a26d078e9e478ed6d6c16c201ed",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdata_多人模式_预制体.bundle",
+            "MainBundleSize": 12165,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Resources/图片/按键.png",
+                    "AssetGUID": "269d25107a0232e4fa77917900cb3180"
+                },
+                {
+                    "AssetPath": "Assets/Resources/图片/描边.png",
+                    "AssetGUID": "4ab5a4b13f82f2948a2a5c5df1615f98"
+                },
+                {
+                    "AssetPath": "Assets/Resources/字体/Furore/Furore-2.otf",
+                    "AssetGUID": "d3c7203d0fcb48f40bad0fb56e34c555"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_resources_图片.bundle",
+                "share_assets_resources_字体_furore.bundle",
+                "unityshaders.bundle"
+            ]
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_hotupdata_多人模式_code_mscorlib_dll_bytes.rawfile",
+            "FileName": "00eae6b12e332d627725f76254962d9e.rawfile",
+            "FileHash": "00eae6b12e332d627725f76254962d9e",
+            "FileCrc": 2808196264,
+            "FileSize": 1029446,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/Code/mscorlib.dll.bytes",
+                    "AssetGUID": "122e3628494e9d04b9ad2c83f86d6ce6"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_code_system_core_dll_bytes.rawfile",
+            "FileName": "4b320283b1dcb49c8f25a06486a864ba.rawfile",
+            "FileHash": "4b320283b1dcb49c8f25a06486a864ba",
+            "FileCrc": 1307047485,
+            "FileSize": 51684,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/Code/System.Core.dll.bytes",
+                    "AssetGUID": "8eafea6f05337414aa6279a2c15da26e"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_code_system_dll_bytes.rawfile",
+            "FileName": "e02ac55f905be70ea3fa722c603043eb.rawfile",
+            "FileHash": "e02ac55f905be70ea3fa722c603043eb",
+            "FileCrc": 2878430020,
+            "FileSize": 285006,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/Code/System.dll.bytes",
+                    "AssetGUID": "881785ca1d340d34a8d4591c0a051f7f"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_code_多人游戏_code_dll_bytes.rawfile",
+            "FileName": "3649358ea2c88cbbac0e213e37ee796e.rawfile",
+            "FileHash": "3649358ea2c88cbbac0e213e37ee796e",
+            "FileCrc": 419134318,
+            "FileSize": 3605,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/Code/多人游戏_Code.dll.bytes",
+                    "AssetGUID": "4cd44aaa5e78056429881976df912ad5"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_图像.bundle",
+            "FileName": "43d1ce701d065cd39ca7d5d8cb934298.bundle",
+            "FileHash": "43d1ce701d065cd39ca7d5d8cb934298",
+            "FileCrc": 346935779,
+            "FileSize": 10503,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/图像/遥感提示.png",
+                    "AssetGUID": "c6ad2a0aa074b374d86e9cdafe4861f5"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_场景.bundle",
+            "FileName": "6b78ef7be313b9c84ecc304d9f21356b.bundle",
+            "FileHash": "6b78ef7be313b9c84ecc304d9f21356b",
+            "FileCrc": 4191294175,
+            "FileSize": 22455,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_hotupdata_多人模式_图像.bundle",
+                "assets_hotupdata_多人模式_模型_门.bundle",
+                "assets_hotupdata_多人模式_模型_门_贴图.bundle",
+                "share_assets_resources_图片.bundle",
+                "share_assets_resources_字体_furore.bundle",
+                "share_assets_resources_字体_阿里巴巴普惠体.bundle",
+                "share_packages_com_unity_inputsystem_inputsystem_plugins_playerinput.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/场景/测试地图.unity",
+                    "AssetGUID": "b7c41275121b91a42a6e19e60205eb74"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_模型_门.bundle",
+            "FileName": "11c6230feaaae08d8598dc53d9e5cfd0.bundle",
+            "FileHash": "11c6230feaaae08d8598dc53d9e5cfd0",
+            "FileCrc": 1495156982,
+            "FileSize": 17592,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_hotupdata_多人模式_模型_门_贴图.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/模型/门/门.fbx",
+                    "AssetGUID": "61ac241734b48424f91fb2537a9eaab5"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_模型_门_贴图.bundle",
+            "FileName": "4b0e2cfd979b092c3c7872f25227533a.bundle",
+            "FileHash": "4b0e2cfd979b092c3c7872f25227533a",
+            "FileCrc": 4124177500,
+            "FileSize": 26047,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle",
+                "assets_hotupdata_多人模式_模型_门.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/模型/门/贴图/门1 1.png",
+                    "AssetGUID": "a3813c230b9af0c4891a5d3b7805448d"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/模型/门/贴图/门1.png",
+                    "AssetGUID": "b114a17d392cdba4db849b262b51b5a2"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdata_多人模式_预制体.bundle",
+            "FileName": "f258790decef380ec14ba43ca233789d.bundle",
+            "FileHash": "f258790decef380ec14ba43ca233789d",
+            "FileCrc": 260677181,
+            "FileSize": 12165,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_resources_图片.bundle",
+                "share_assets_resources_字体_furore.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/预制体/游戏版本控制器.prefab",
+                    "AssetGUID": "13d5a855f402daa4fa045ed94dfe67e2"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/预制体/玩家.prefab",
+                    "AssetGUID": "39b0f124911f42244946f33dfd4a4758"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdata/多人模式/预制体/装备选项.prefab",
+                    "AssetGUID": "9f010a26d078e9e478ed6d6c16c201ed"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_resources_图片.bundle",
+            "FileName": "b65ec1fc67152e47b7a0600866209108.bundle",
+            "FileHash": "b65ec1fc67152e47b7a0600866209108",
+            "FileCrc": 2059520407,
+            "FileSize": 17406,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle",
+                "assets_hotupdata_多人模式_预制体.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Resources/图片/圆.png",
+                    "AssetGUID": "6e6a50c9cc595b94281c94114d751861"
+                },
+                {
+                    "AssetPath": "Assets/Resources/图片/按键.png",
+                    "AssetGUID": "269d25107a0232e4fa77917900cb3180"
+                },
+                {
+                    "AssetPath": "Assets/Resources/图片/描边.png",
+                    "AssetGUID": "4ab5a4b13f82f2948a2a5c5df1615f98"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_resources_字体_furore.bundle",
+            "FileName": "3de6c55f6d88f5c8df07c31a0787f1be.bundle",
+            "FileHash": "3de6c55f6d88f5c8df07c31a0787f1be",
+            "FileCrc": 2165226434,
+            "FileSize": 16283,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle",
+                "assets_hotupdata_多人模式_预制体.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Resources/字体/Furore/Furore-2.otf",
+                    "AssetGUID": "d3c7203d0fcb48f40bad0fb56e34c555"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_resources_字体_阿里巴巴普惠体.bundle",
+            "FileName": "c26810a22934a9c1eea251da1269589d.bundle",
+            "FileHash": "c26810a22934a9c1eea251da1269589d",
+            "FileCrc": 4138156199,
+            "FileSize": 6970331,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Resources/字体/阿里巴巴普惠体/Alibaba-PuHuiTi-Bold.ttf",
+                    "AssetGUID": "69130479c5a74f24b92763207a78f341"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_inputsystem_inputsystem_plugins_playerinput.bundle",
+            "FileName": "57c43952d9271347f0610c207ce302ad.bundle",
+            "FileHash": "57c43952d9271347f0610c207ce302ad",
+            "FileCrc": 934808749,
+            "FileSize": 7697,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions",
+                    "AssetGUID": "ca9f5fa95ffab41fb9a615ab714db018"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+            "FileName": "0ecf3c4373c26a77d07d23463f222e9e.bundle",
+            "FileHash": "0ecf3c4373c26a77d07d23463f222e9e",
+            "FileCrc": 2372874327,
+            "FileSize": 3039,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle",
+                "assets_hotupdata_多人模式_预制体.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat",
+                    "AssetGUID": "31321ba15b8f8eb4c954353edc038b1d"
+                }
+            ]
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "FileName": "1240557d0bd8a1de98d88eb6ef9ea262.bundle",
+            "FileHash": "1240557d0bd8a1de98d88eb6ef9ea262",
+            "FileCrc": 668733437,
+            "FileSize": 172786,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdata_多人模式_场景.bundle",
+                "assets_hotupdata_多人模式_模型_门.bundle",
+                "assets_hotupdata_多人模式_预制体.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader",
+                    "AssetGUID": "933532a4fcc9baf4fa0491de14d08ed7"
+                }
+            ]
+        }
+    ],
+    "IndependentAssets": []
+}

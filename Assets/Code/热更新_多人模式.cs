@@ -110,6 +110,7 @@ public class 热更新_多人模式 : MonoBehaviour
     }
     private IEnumerator UpdatePackageManifest(string packageVersion)
     {
+        var Code包名称 = "多人游戏_Code";
         var package = YooAssets.GetPackage("多人模式包");
         var operation = package.LoadPackageManifestAsync(new LoadPackageManifestOptions(packageVersion, 60));
         yield return operation;
@@ -117,7 +118,7 @@ public class 热更新_多人模式 : MonoBehaviour
         if (operation.Status == EOperationStatus.Succeeded)
         {
             //更新成功
-            var assets = new List<string> { "HotUpdata.dll" }.Concat(AOTMetaAssemblyFiles);
+            var assets = new List<string> { $"{ Code包名称 }.dll" }.Concat(AOTMetaAssemblyFiles);
             foreach (var asset in assets)
             {
                 var handle = package.LoadAssetAsync<TextAsset>(asset);
@@ -130,10 +131,15 @@ public class 热更新_多人模式 : MonoBehaviour
             LoadMetadataForAOTAssemblies();
             // 加载热更dll
             #if !UNITY_EDITOR
-                _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdata.dll"));
+                _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets($"{ Code包名称 }.dll"));
             #else
-                _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdata");
+                _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == Code包名称);
             #endif
+
+            var 游戏版本_handle = package.LoadAssetAsync<GameObject>("Assets/HotUpdata/多人模式/预制体/游戏版本控制器.prefab");
+            yield return 游戏版本_handle;
+            var 游戏版本_assets = 游戏版本_handle.AssetObject as GameObject;
+            GameObject 游戏版本_gameObject = Instantiate(游戏版本_assets);
             是否初始化完成 = true;
         }
         else
