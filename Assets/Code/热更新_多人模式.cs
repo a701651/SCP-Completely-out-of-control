@@ -136,7 +136,7 @@ public class 热更新_多人模式 : MonoBehaviour
                 _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == Code包名称);
             #endif
 
-            var 游戏版本_handle = package.LoadAssetAsync<GameObject>("Assets/HotUpdata/多人模式/预制体/游戏版本控制器.prefab");
+            var 游戏版本_handle = package.LoadAssetAsync<GameObject>("Assets/HotUpdata/多人模式/游戏版本控制器.prefab");
             yield return 游戏版本_handle;
             var 游戏版本_assets = 游戏版本_handle.AssetObject as GameObject;
             GameObject 游戏版本_gameObject = Instantiate(游戏版本_assets);

@@ -70,9 +70,17 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u6E38\u620F\u7248\u672C\u63A7\u5236\u5668.prefab"
+        CollectorGUID: 13d5a855f402daa4fa045ed94dfe67e2
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: "\u5FC5\u8981"
+        UserData: 
     - GroupName: Code
       GroupDesc: 
-      AssetTags: 
+      AssetTags: "\u5FC5\u8981"
       ActiveRuleName: EnableGroup
       Collectors:
       - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/Code"
