@@ -7,7 +7,6 @@ using YooAsset;
 
 public class 开发_UI_进入主界面_按钮 : MonoBehaviour
 {
-    private 多人游戏管理器 _多人游戏管理器;
     private 热更新_多人模式 _热更新_多人模式;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,34 +22,17 @@ public class 开发_UI_进入主界面_按钮 : MonoBehaviour
             return;
         }
         // 创建多人游戏控制器
-        // _多人游戏管理器 = FindAnyObjectByType<多人游戏管理器>();
-        if (_多人游戏管理器 == null)
-        {
-            var 多人游戏管理器_GameObject = new GameObject("多人游戏管理器");
-            // 添加组件
-            多人游戏管理器_GameObject.AddComponent<KcpTransport>();
-            多人游戏管理器_GameObject.AddComponent<多人游戏管理器>();
-            _多人游戏管理器 = 多人游戏管理器_GameObject.GetComponent<多人游戏管理器>();
-            // 加入后台
-            DontDestroyOnLoad(多人游戏管理器_GameObject);
-        }
-        // 加载热更新内容包
-        // 初始化资源系统
-        if (!YooAssets.IsInitialized)
-        {
-            YooAssets.Initialize();
-        }
-        StartCoroutine(加载玩家预制体());
+        StartCoroutine(加载场景());
     }
-    IEnumerator 加载玩家预制体()
+    IEnumerator 加载场景()
     {
         var package = YooAssets.GetPackage("多人模式包");
-        AssetHandle handle = package.LoadAssetAsync<GameObject>("Assets/HotUpdata/多人模式/预制体/玩家.prefab");
+        string location = "Assets/HotUpdata/多人模式/场景/主场景.unity";
+        var sceneMode = UnityEngine.SceneManagement.LoadSceneMode.Single;
+        var physicsMode = LocalPhysicsMode.None;
+        bool allowSceneActivation = true;
+        SceneHandle handle = package.LoadSceneAsync(location, sceneMode, physicsMode, allowSceneActivation);
         yield return handle;
-        /*GameObject go = handle.InstantiateSync();*/
-        _多人游戏管理器.playerPrefab = handle.AssetObject as GameObject;
-        
-        // 跳转场景
-        SceneManager.LoadScene("Scenes/主场景");
+        Debug.Log($"Scene name is {handle.SceneName}");
     }
 }

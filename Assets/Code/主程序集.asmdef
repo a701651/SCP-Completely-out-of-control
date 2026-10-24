@@ -1,0 +1,19 @@
+{
+    "name": "主程序集",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InputSystem",
+        "kcp2k",
+        "YooAsset",
+        "HybridCLR.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

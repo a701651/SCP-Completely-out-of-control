@@ -1,7 +1,20 @@
 {
     "name": "多人游戏_Code",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:6806a62c384838046a3c66c44f06d75f",
+        "GUID:e34a5702dd353724aa315fb8011f08c3",
+        "GUID:30817c1a0e6d646d99c048fc403f5979",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:4bd8e792e1342924e91704b1ead8b3cd",
+        "GUID:e720aa64e3f58fb4880566a322584340",
+        "GUID:325984b52e4128546bc7558552f8b1d2",
+        "GUID:72872094b21c16e48b631b2224833d49",
+        "GUID:1c7c33eb5480dd24c9e29a8250c1a775",
+        "GUID:fecf25954bb196642ab50657689761d6",
+        "GUID:627104647b9c04b4ebb8978a92ecac63",
+        "GUID:1d0b9d21c3ff546a4aa32399dfd33474"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
