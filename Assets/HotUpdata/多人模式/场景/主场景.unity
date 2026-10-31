@@ -2286,6 +2286,7 @@ GameObject:
   - component: {fileID: 1549317287}
   - component: {fileID: 1549317286}
   - component: {fileID: 1549317285}
+  - component: {fileID: 1549317288}
   m_Layer: 5
   m_Name: "\u52A0\u5165\u613F\u671B\u5355\u9009\u9879"
   m_TagString: Untagged
@@ -2356,7 +2357,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1549317286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1549317288}
+        m_TargetAssemblyTypeName: "UI_\u6309\u94AE_\u52A0\u5165\u613F\u671B\u5355,
+          \u591A\u4EBA\u6E38\u620F_Code"
+        m_MethodName: AddToWishlist
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1549317286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2395,6 +2409,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549317283}
   m_CullTransparentMesh: 1
+--- !u!114 &1549317288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549317283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b525d4dc66d38434b8c139d9cbd01d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAppId: 480
 --- !u!1 &1593886090
 GameObject:
   m_ObjectHideFlags: 0
