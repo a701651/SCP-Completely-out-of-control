@@ -12,16 +12,22 @@ public class 热更新_多人模式 : MonoBehaviour
 {
     public bool 是否初始化完成 = false;
     private 加载界面_进度条_状态机 _进度条状态机;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Awake()
+
+    private void Start()
     {
-        _进度条状态机 = FindAnyObjectByType<加载界面_进度条_状态机>();
         OnClick();
-        DontDestroyOnLoad(gameObject);
     }
 
-    void OnClick()
+    private void OnClick()
     {
+        StartCoroutine(初始化热更新());
+    }
+
+    IEnumerator 初始化热更新()
+    {
+        yield return null;
+        _进度条状态机 = FindAnyObjectByType<加载界面_进度条_状态机>();
+        DontDestroyOnLoad(gameObject);
         _进度条状态机.设置进度条Show(true);
         // 初始化资源系统
         if (!YooAssets.IsInitialized)
@@ -42,11 +48,6 @@ public class 热更新_多人模式 : MonoBehaviour
             package = YooAssets.CreatePackage("多人模式包");
         }
         _进度条状态机.设置进度(10, "正在加载资源...");
-        初始化热更新();
-    }
-
-    void 初始化热更新()
-    {
         if (Application.isEditor)
         {
             StartCoroutine(InitPackage_开发());
@@ -136,7 +137,11 @@ public class 热更新_多人模式 : MonoBehaviour
             }
             _进度条状态机.设置进度(60, "正在加载资源...");
             // 加载AOT dll的元数据
-            LoadMetadataForAOTAssemblies();
+            /*LoadMetadataForAOTAssemblies();*/
+            var sw = System.Diagnostics.Stopwatch.StartNew();
+            热更新_多人模式.LoadMetadataForAOTAssemblies();
+            sw.Stop();
+            Debug.Log($"[Boot] LoadMetadataForAOTAssembly took {sw.ElapsedMilliseconds} ms");
             // 加载热更dll
             #if !UNITY_EDITOR
                 _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets($"{ Code包名称 }.dll"));
