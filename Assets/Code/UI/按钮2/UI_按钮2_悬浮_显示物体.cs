@@ -3,14 +3,14 @@ using UnityEngine.EventSystems;
 
 public class UI_按钮2_悬浮_显示物体 : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject 显示物体;
+    public Animator 动画器;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        显示物体.SetActive(true);
+        动画器.Play("显示");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        显示物体.SetActive(false);
+        动画器.Play("隐藏");
     }
 }
