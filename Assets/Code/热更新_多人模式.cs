@@ -25,7 +25,6 @@ public class 热更新_多人模式 : MonoBehaviour
 
     IEnumerator 初始化热更新()
     {
-        yield return null;
         _进度条状态机 = FindAnyObjectByType<加载界面_进度条_状态机>();
         DontDestroyOnLoad(gameObject);
         _进度条状态机.设置进度条Show(true);
@@ -33,6 +32,7 @@ public class 热更新_多人模式 : MonoBehaviour
         if (!YooAssets.IsInitialized)
         {
             _进度条状态机.设置进度(0, "正在加载资源...");
+            yield return null;
             YooAssets.Initialize();
         }
         
@@ -48,6 +48,7 @@ public class 热更新_多人模式 : MonoBehaviour
             package = YooAssets.CreatePackage("多人模式包");
         }
         _进度条状态机.设置进度(10, "正在加载资源...");
+        yield return null;
         if (Application.isEditor)
         {
             StartCoroutine(InitPackage_开发());
@@ -98,6 +99,7 @@ public class 热更新_多人模式 : MonoBehaviour
     private IEnumerator RequestPackageVersion()
     {
         _进度条状态机.设置进度(20, "正在加载资源...");
+        yield return null;
         var package = YooAssets.GetPackage("多人模式包");
         var operation = package.RequestPackageVersionAsync();
         yield return operation;
@@ -118,6 +120,7 @@ public class 热更新_多人模式 : MonoBehaviour
     private IEnumerator UpdatePackageManifest(string packageVersion)
     {
         _进度条状态机.设置进度(50, "正在加载资源...");
+        yield return null;
         var Code包名称 = "多人游戏_Code";
         var package = YooAssets.GetPackage("多人模式包");
         var operation = package.LoadPackageManifestAsync(new LoadPackageManifestOptions(packageVersion, 60));
@@ -136,6 +139,7 @@ public class 热更新_多人模式 : MonoBehaviour
                 Debug.Log($"dll:{asset}   {assetObj == null}");
             }
             _进度条状态机.设置进度(60, "正在加载资源...");
+            yield return null;
             // 加载AOT dll的元数据
             /*LoadMetadataForAOTAssemblies();*/
             var sw = System.Diagnostics.Stopwatch.StartNew();
@@ -149,12 +153,13 @@ public class 热更新_多人模式 : MonoBehaviour
                 _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == Code包名称);
             #endif
             _进度条状态机.设置进度(80, "正在加载资源...");
+            yield return null;
             var 游戏版本_handle = package.LoadAssetAsync<GameObject>("Assets/HotUpdata/多人模式/游戏版本控制器.prefab");
             yield return 游戏版本_handle;
             var 游戏版本_assets = 游戏版本_handle.AssetObject as GameObject;
             GameObject 游戏版本_gameObject = Instantiate(游戏版本_assets);
             _进度条状态机.设置进度(100, "正在加载资源...");
-            yield return new WaitForSeconds(2f);
+            yield return null;
             _进度条状态机.设置进度条Show(false);
             是否初始化完成 = true;
         }
