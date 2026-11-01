@@ -6,7 +6,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     public static readonly IReadOnlyList<string> PatchedAOTAssemblyList = new List<string>
     {
         "Mirror.dll",
-        "Unity.InputSystem.dll",
         "UnityEngine.CoreModule.dll",
         "YooAsset.dll",
         "mscorlib.dll",
@@ -160,8 +159,8 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // Mirror.Writer<uint>
     // Mirror.Writer<ulong>
     // Mirror.Writer<ushort>
-    // System.Action<UnityEngine.EventSystems.RaycastResult>
     // System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>
+    // System.Action<UnityEngine.Vector2,UnityEngine.Vector2>
     // System.Action<UnityEngine.Vector2>
     // System.Action<int>
     // System.Action<object,Mirror.AddPlayerMessage>
@@ -235,34 +234,9 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // System.Action<object,uint>
     // System.Action<object,ulong>
     // System.Action<object,ushort>
-    // System.Action<object>
-    // System.Collections.Generic.ArraySortHelper<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.ArraySortHelper<object>
-    // System.Collections.Generic.Comparer<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.Comparer<object>
-    // System.Collections.Generic.EqualityComparer<object>
-    // System.Collections.Generic.ICollection<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.ICollection<object>
-    // System.Collections.Generic.IComparer<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.IComparer<object>
-    // System.Collections.Generic.IEnumerable<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.IEnumerable<object>
-    // System.Collections.Generic.IEnumerator<UnityEngine.EventSystems.RaycastResult>
+    // System.Collections.Generic.EqualityComparer<UnityEngine.Vector2>
     // System.Collections.Generic.IEnumerator<object>
-    // System.Collections.Generic.IEqualityComparer<object>
-    // System.Collections.Generic.IList<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.IList<object>
-    // System.Collections.Generic.List.Enumerator<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.List.Enumerator<object>
-    // System.Collections.Generic.List<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.List<object>
-    // System.Collections.Generic.ObjectComparer<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.Generic.ObjectComparer<object>
-    // System.Collections.Generic.ObjectEqualityComparer<object>
-    // System.Collections.ObjectModel.ReadOnlyCollection<UnityEngine.EventSystems.RaycastResult>
-    // System.Collections.ObjectModel.ReadOnlyCollection<object>
-    // System.Comparison<UnityEngine.EventSystems.RaycastResult>
-    // System.Comparison<object>
+    // System.Collections.Generic.ObjectEqualityComparer<UnityEngine.Vector2>
     // System.Func<object,Mirror.AddPlayerMessage>
     // System.Func<object,Mirror.ChangeOwnerMessage>
     // System.Func<object,Mirror.CommandMessage>
@@ -335,31 +309,20 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // System.Func<object,uint>
     // System.Func<object,ulong>
     // System.Func<object,ushort>
-    // System.Nullable<UnityEngine.InputSystem.EnhancedTouch.Touch>
-    // System.Predicate<UnityEngine.EventSystems.RaycastResult>
-    // System.Predicate<UnityEngine.InputSystem.EnhancedTouch.Touch>
-    // System.Predicate<object>
-    // UnityEngine.InputSystem.InputBindingComposite<UnityEngine.Vector2>
-    // UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>
-    // UnityEngine.InputSystem.InputProcessor<UnityEngine.Vector2>
-    // UnityEngine.InputSystem.Utilities.InlinedArray<object>
-    // UnityEngine.InputSystem.Utilities.ReadOnlyArray.Enumerator<UnityEngine.InputSystem.EnhancedTouch.Touch>
-    // UnityEngine.InputSystem.Utilities.ReadOnlyArray<UnityEngine.InputSystem.EnhancedTouch.Touch>
     // }}
 
     public void RefMethods()
     {
+        // System.Void Mirror.NetworkBehaviour.GeneratedSyncVarDeserialize<UnityEngine.Vector2>(UnityEngine.Vector2&,System.Action<UnityEngine.Vector2,UnityEngine.Vector2>,UnityEngine.Vector2)
+        // System.Void Mirror.NetworkBehaviour.GeneratedSyncVarSetter<UnityEngine.Vector2>(UnityEngine.Vector2,UnityEngine.Vector2&,ulong,System.Action<UnityEngine.Vector2,UnityEngine.Vector2>)
+        // System.Void Mirror.NetworkBehaviour.SetSyncVar<UnityEngine.Vector2>(UnityEngine.Vector2,UnityEngine.Vector2&,ulong)
+        // bool Mirror.NetworkBehaviour.SyncVarEqual<UnityEngine.Vector2>(UnityEngine.Vector2,UnityEngine.Vector2&)
         // object& System.Runtime.CompilerServices.Unsafe.As<object,object>(object&)
         // System.Void* System.Runtime.CompilerServices.Unsafe.AsPointer<object>(object&)
-        // System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<UnityEngine.Vector2>(UnityEngine.Vector2&)
-        // int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<UnityEngine.Vector2>()
         // object UnityEngine.Component.GetComponent<object>()
         // object UnityEngine.GameObject.GetComponent<object>()
         // object UnityEngine.GameObject.GetComponentInParent<object>()
         // object UnityEngine.GameObject.GetComponentInParent<object>(bool)
-        // UnityEngine.Vector2 UnityEngine.InputSystem.InputAction.CallbackContext.ReadValue<UnityEngine.Vector2>()
-        // UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ApplyProcessors<UnityEngine.Vector2>(int,UnityEngine.Vector2,UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>)
-        // UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ReadValue<UnityEngine.Vector2>(int,int,bool)
         // object UnityEngine.Object.FindAnyObjectByType<object>()
         // YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetAsync<object>(string,uint)
     }

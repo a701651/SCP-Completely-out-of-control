@@ -93,6 +93,9 @@ public class 虚拟遥感_UI_遥感绑定 : MonoBehaviour, IBeginDragHandler, IE
 
     void 通知玩家发送输入(Vector2 输入)
     {
-        _root.更新移动输入(输入);
+        if (_root != null)
+        {
+            _root.更新移动输入(输入);
+        }
     }
 }

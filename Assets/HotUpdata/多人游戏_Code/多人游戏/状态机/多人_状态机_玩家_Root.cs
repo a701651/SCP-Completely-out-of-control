@@ -17,10 +17,8 @@ public class 多人_状态机_玩家_Root : NetworkBehaviour
         if (!isLocalPlayer)
         {
             摄像机.SetActive(false);
+            return;
         }
-    }
-    public void OnEnable()
-    {
         var 虚拟遥感 = FindAnyObjectByType<虚拟遥感_UI_遥感绑定>();
         if (虚拟遥感 != null)
         {

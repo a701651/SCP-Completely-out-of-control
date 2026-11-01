@@ -245,10 +245,9 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   "\u6444\u50CF\u673A": {fileID: 1983202068676667579}
-  "\u662F\u5426\u672C\u5730\u73A9\u5BB6": 0
   "\u662F\u5426\u80FD\u79FB\u52A8": 1
-  "\u865A\u62DF\u6447\u6746": {fileID: 0}
   "\u79FB\u52A8\u901F\u5EA6": 5
+  "\u79FB\u52A8\u8F93\u5165": {x: 0, y: 0}
 --- !u!114 &8931251802672522664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,9 +260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b13ca0892c5334fbd87aee4cd7936f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   "\u89C6\u89D2\u8282\u70B9": {fileID: 4673974833192069323}
-  "\u9F20\u6807\u7075\u654F\u5EA6": 0.1
-  "\u89E6\u5C4F\u7075\u654F\u5EA6": 0.08
   "\u4FEF\u4EF0\u4E0A\u9650": 80
   "\u4FEF\u4EF0\u4E0B\u9650": -80
 --- !u!143 &3502302012948382828
@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   syncDirection: 0
-  syncMode: 1
+  syncMode: 0
   syncInterval: 0
   target: {fileID: 7349634181899791009}
   syncPosition: 1

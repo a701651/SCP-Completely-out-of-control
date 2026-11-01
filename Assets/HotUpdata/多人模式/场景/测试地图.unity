@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 73910309}
   - component: {fileID: 73910313}
   m_Layer: 5
-  m_Name: PlayerCanvas
+  m_Name: "///\u73A9\u5BB6\u9762\u677F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
