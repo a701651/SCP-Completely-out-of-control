@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
-  m_Name: AssetBundleCollectorSetting
+  m_Name: BundleCollectorSetting
   m_EditorClassIdentifier: 
   ShowPackageView: 1
   ShowEditorAlias: 1
@@ -25,59 +25,6 @@ MonoBehaviour:
     AutoCollectShaders: 1
     IgnoreRuleName: NormalIgnoreRule
     Groups:
-    - GroupName: Default Group
-      GroupDesc: 
-      AssetTags: 
-      ActiveRuleName: EnableGroup
-      Collectors:
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u56FE\u50CF"
-        CollectorGUID: 17e7c346653fae84dba85d74a351638c
-        CollectorType: 0
-        AddressRuleName: AddressByFolderAndFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u573A\u666F"
-        CollectorGUID: e2aa44ac2221a2846824497ce3a4551f
-        CollectorType: 0
-        AddressRuleName: AddressByFolderAndFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u6A21\u578B"
-        CollectorGUID: 57a56256b6188f345b2a085cba2b33fd
-        CollectorType: 0
-        AddressRuleName: AddressByFolderAndFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u9884\u5236\u4F53"
-        CollectorGUID: c842b62bf73870c4796a14c7d042a46b
-        CollectorType: 0
-        AddressRuleName: AddressByFolderAndFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/Shader"
-        CollectorGUID: 53beb5ffe07596a42b215bf70755ebc2
-        CollectorType: 0
-        AddressRuleName: AddressByFolderAndFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u6E38\u620F\u7248\u672C\u63A7\u5236\u5668.prefab"
-        CollectorGUID: 13d5a855f402daa4fa045ed94dfe67e2
-        CollectorType: 0
-        AddressRuleName: AddressByFolderAndFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: "\u5FC5\u8981"
-        UserData: 
     - GroupName: Code
       GroupDesc: 
       AssetTags: "\u5FC5\u8981"
@@ -91,3 +38,73 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+    - GroupName: "\u56FE\u50CF"
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u56FE\u50CF"
+        CollectorGUID: 17e7c346653fae84dba85d74a351638c
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: "\u573A\u666F"
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u573A\u666F"
+        CollectorGUID: e2aa44ac2221a2846824497ce3a4551f
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: "\u6A21\u578B"
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u6A21\u578B"
+        CollectorGUID: 57a56256b6188f345b2a085cba2b33fd
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: "\u9884\u5236\u4F53"
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u9884\u5236\u4F53"
+        CollectorGUID: c842b62bf73870c4796a14c7d042a46b
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: "\u5FC5\u8981\u8D44\u6E90"
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u6E38\u620F\u7248\u672C\u63A7\u5236\u5668.prefab"
+        CollectorGUID: 13d5a855f402daa4fa045ed94dfe67e2
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: "\u5FC5\u8981"
+        UserData: 
+    - GroupName: Default Group
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors: []

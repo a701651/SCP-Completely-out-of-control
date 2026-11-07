@@ -8,6 +8,7 @@ using YooAsset;
 
 public class 多人游戏_服务器功能 : MonoBehaviour
 {
+    private UI_覆盖界面_管理器 _覆盖界面管理器;
     public InputField IP输入框;
     private 多人游戏管理器 _多人游戏管理器;
     public string IP = "127.0.0.1";
@@ -79,5 +80,10 @@ public class 多人游戏_服务器功能 : MonoBehaviour
         SceneHandle handle = package.LoadSceneAsync(location, sceneMode, physicsMode, allowSceneActivation);
         yield return handle;
         Debug.Log($"Scene name is {handle.SceneName}");
+    }
+
+    private void Awake()
+    {
+        _覆盖界面管理器 = FindAnyObjectByType<UI_覆盖界面_管理器>();
     }
 }

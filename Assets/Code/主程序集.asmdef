@@ -6,7 +6,8 @@
         "kcp2k",
         "YooAsset",
         "HybridCLR.Runtime",
-        "Unity.TextMeshPro"
+        "Unity.TextMeshPro",
+        "Mirror"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

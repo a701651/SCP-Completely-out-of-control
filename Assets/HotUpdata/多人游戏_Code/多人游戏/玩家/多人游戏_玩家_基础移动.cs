@@ -25,9 +25,8 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
         }
     }
     private Vector2 _输入;
-
-    [Header("相机")]
-    [Tooltip("相机俯仰节点，Player 的子物体")]
+    [Header("视角")]
+    [Tooltip("视角节点，用于旋转视角")]
     public Transform 视角节点;
 
     [Header("视角设置")]
@@ -43,7 +42,7 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
 
     private void OnEnable()
     {
-        _root = GetComponent<多人_状态机_玩家_Root>();
+        _root = GetComponentInParent<多人_状态机_玩家_Root>();
         _controller = GetComponent<CharacterController>();
 
         if (_root == null)
