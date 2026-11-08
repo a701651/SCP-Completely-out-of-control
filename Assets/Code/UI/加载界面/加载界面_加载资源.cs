@@ -9,6 +9,8 @@ public class 加载界面_加载资源 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        页面1.SetActive(true);
+        页面2.SetActive(false);
         _热更新多人模式 = FindAnyObjectByType<热更新_多人模式>();
         StartCoroutine(加载资源());
     }
