@@ -66,6 +66,77 @@ MonoBehaviour:
     m_Localized: Enter the game
     m_Metadata:
       m_Items: []
+  - m_Id: 94560155246592
+    m_Localized: New version detected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94560717283328
+    m_Localized: Not updating for now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94561270931456
+    m_Localized: Go to update
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94749586792448
+    m_Localized: 'A new version has been detected: {0}
+
+      Would you like to update
+      to the new version?
+
+      After clicking the button, you will be directed
+      to a third-party website to complete the download.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99872857825280
+    m_Localized: The current version is outdated. Please upgrade the version for
+      a better experience.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 105474061410304
+    m_Localized: Total Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 111089928282112
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119663316344832
+    m_Localized: Server List
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119663979044864
+    m_Localized: Connect to server
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119664666910720
+    m_Localized: Create a server
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119833475063808
+    m_Localized: Please enter the server IP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120273998618624
+    m_Localized: Join
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120739541196800
+    m_Localized: Move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120852363780096
+    m_Localized: Fire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120853005508608
+    m_Localized: Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120853630459904
+    m_Localized: Backpack
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

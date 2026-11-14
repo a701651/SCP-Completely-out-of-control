@@ -63,10 +63,16 @@ public class 设置_设置文件 : MonoBehaviour
     public class 设置_设置文件_数据
     {
         public 设置_设置文件_数据_显示语言 显示语言 = new 设置_设置文件_数据_显示语言();
+        public 设置_设置文件_数据_音频 音频 = new 设置_设置文件_数据_音频();
     }
     [System.Serializable]
     public class 设置_设置文件_数据_显示语言
     {
         public 多语言_支持语言列表.Language 文本语言 = 多语言_支持语言列表.Language.中文简体;
+    }
+    [System.Serializable]
+    public class 设置_设置文件_数据_音频
+    {
+        public float 总音量 = 1f;
     }
 }

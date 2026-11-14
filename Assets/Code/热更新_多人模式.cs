@@ -158,6 +158,11 @@ public class 热更新_多人模式 : MonoBehaviour
             yield return 游戏版本_handle;
             var 游戏版本_assets = 游戏版本_handle.AssetObject as GameObject;
             GameObject 游戏版本_gameObject = Instantiate(游戏版本_assets);
+            yield return null;
+            var 多语言控制器_handle = package.LoadAssetAsync<GameObject>("Assets/HotUpdata/多人模式/多语言控制器.prefab");
+            yield return 多语言控制器_handle;
+            var 多语言控制器_assets = 多语言控制器_handle.AssetObject as GameObject;
+            GameObject 多语言控制器_gameObject = Instantiate(多语言控制器_assets);
             _进度条状态机.设置进度(100, "正在加载资源...");
             yield return null;
             _进度条状态机.设置进度条Show(false);

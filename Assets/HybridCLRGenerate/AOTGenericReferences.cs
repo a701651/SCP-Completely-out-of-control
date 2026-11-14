@@ -6,7 +6,11 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     public static readonly IReadOnlyList<string> PatchedAOTAssemblyList = new List<string>
     {
         "Mirror.dll",
+        "System.Core.dll",
+        "System.dll",
+        "Unity.ResourceManager.dll",
         "UnityEngine.CoreModule.dll",
+        "UnityEngine.JSONSerializeModule.dll",
         "YooAsset.dll",
         "mscorlib.dll",
     };
@@ -16,6 +20,9 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // }} 
 
     // {{ AOT generic types
+    // DelegateList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
+    // DelegateList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
+    // DelegateList<float>
     // Mirror.Reader<Mirror.AddPlayerMessage>
     // Mirror.Reader<Mirror.ChangeOwnerMessage>
     // Mirror.Reader<Mirror.CommandMessage>
@@ -160,8 +167,13 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // Mirror.Writer<ulong>
     // Mirror.Writer<ushort>
     // System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>
+    // System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,object>
+    // System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
+    // System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
     // System.Action<UnityEngine.Vector2,UnityEngine.Vector2>
     // System.Action<UnityEngine.Vector2>
+    // System.Action<UnityEngine.Vector3,UnityEngine.Vector3>
+    // System.Action<float>
     // System.Action<int>
     // System.Action<object,Mirror.AddPlayerMessage>
     // System.Action<object,Mirror.ChangeOwnerMessage>
@@ -234,9 +246,33 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // System.Action<object,uint>
     // System.Action<object,ulong>
     // System.Action<object,ushort>
+    // System.Action<object>
+    // System.Collections.Generic.ArraySortHelper<object>
+    // System.Collections.Generic.Comparer<object>
     // System.Collections.Generic.EqualityComparer<UnityEngine.Vector2>
+    // System.Collections.Generic.EqualityComparer<UnityEngine.Vector3>
+    // System.Collections.Generic.EqualityComparer<object>
+    // System.Collections.Generic.HashSet.Enumerator<object>
+    // System.Collections.Generic.HashSet<object>
+    // System.Collections.Generic.ICollection<object>
+    // System.Collections.Generic.IComparer<object>
+    // System.Collections.Generic.IEnumerable<object>
     // System.Collections.Generic.IEnumerator<object>
+    // System.Collections.Generic.IEqualityComparer<object>
+    // System.Collections.Generic.IList<object>
+    // System.Collections.Generic.LinkedList.Enumerator<object>
+    // System.Collections.Generic.LinkedList<object>
+    // System.Collections.Generic.LinkedListNode<object>
+    // System.Collections.Generic.List.Enumerator<object>
+    // System.Collections.Generic.List<object>
+    // System.Collections.Generic.ObjectComparer<object>
     // System.Collections.Generic.ObjectEqualityComparer<UnityEngine.Vector2>
+    // System.Collections.Generic.ObjectEqualityComparer<UnityEngine.Vector3>
+    // System.Collections.Generic.ObjectEqualityComparer<object>
+    // System.Collections.Generic.Stack.Enumerator<object>
+    // System.Collections.Generic.Stack<object>
+    // System.Collections.ObjectModel.ReadOnlyCollection<object>
+    // System.Comparison<object>
     // System.Func<object,Mirror.AddPlayerMessage>
     // System.Func<object,Mirror.ChangeOwnerMessage>
     // System.Func<object,Mirror.CommandMessage>
@@ -303,27 +339,54 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // System.Func<object,float>
     // System.Func<object,int>
     // System.Func<object,long>
+    // System.Func<object,object,object>
     // System.Func<object,object>
     // System.Func<object,sbyte>
     // System.Func<object,short>
     // System.Func<object,uint>
     // System.Func<object,ulong>
     // System.Func<object,ushort>
+    // System.Func<object>
+    // System.Predicate<object>
+    // System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<object>
+    // System.Runtime.CompilerServices.ConfiguredTaskAwaitable<object>
+    // System.Runtime.CompilerServices.TaskAwaiter<object>
+    // System.Threading.Tasks.ContinuationTaskFromResultTask<object>
+    // System.Threading.Tasks.Task<object>
+    // System.Threading.Tasks.TaskCompletionSource<object>
+    // System.Threading.Tasks.TaskFactory.<>c__DisplayClass35_0<object>
+    // System.Threading.Tasks.TaskFactory<object>
+    // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass60_0<object>
+    // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass61_0<object>
+    // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase<object>
+    // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle.<>c<object>
+    // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>
+    // UnityEngine.ResourceManagement.Util.GlobalLinkedListNodeCache<object>
+    // UnityEngine.ResourceManagement.Util.LinkedListNodeCache<object>
     // }}
 
     public void RefMethods()
     {
         // System.Void Mirror.NetworkBehaviour.GeneratedSyncVarDeserialize<UnityEngine.Vector2>(UnityEngine.Vector2&,System.Action<UnityEngine.Vector2,UnityEngine.Vector2>,UnityEngine.Vector2)
+        // System.Void Mirror.NetworkBehaviour.GeneratedSyncVarDeserialize<UnityEngine.Vector3>(UnityEngine.Vector3&,System.Action<UnityEngine.Vector3,UnityEngine.Vector3>,UnityEngine.Vector3)
         // System.Void Mirror.NetworkBehaviour.GeneratedSyncVarSetter<UnityEngine.Vector2>(UnityEngine.Vector2,UnityEngine.Vector2&,ulong,System.Action<UnityEngine.Vector2,UnityEngine.Vector2>)
+        // System.Void Mirror.NetworkBehaviour.GeneratedSyncVarSetter<UnityEngine.Vector3>(UnityEngine.Vector3,UnityEngine.Vector3&,ulong,System.Action<UnityEngine.Vector3,UnityEngine.Vector3>)
         // System.Void Mirror.NetworkBehaviour.SetSyncVar<UnityEngine.Vector2>(UnityEngine.Vector2,UnityEngine.Vector2&,ulong)
+        // System.Void Mirror.NetworkBehaviour.SetSyncVar<UnityEngine.Vector3>(UnityEngine.Vector3,UnityEngine.Vector3&,ulong)
         // bool Mirror.NetworkBehaviour.SyncVarEqual<UnityEngine.Vector2>(UnityEngine.Vector2,UnityEngine.Vector2&)
+        // bool Mirror.NetworkBehaviour.SyncVarEqual<UnityEngine.Vector3>(UnityEngine.Vector3,UnityEngine.Vector3&)
         // object& System.Runtime.CompilerServices.Unsafe.As<object,object>(object&)
         // System.Void* System.Runtime.CompilerServices.Unsafe.AsPointer<object>(object&)
         // object UnityEngine.Component.GetComponent<object>()
+        // object UnityEngine.Component.GetComponentInChildren<object>(bool)
+        // object UnityEngine.Component.GetComponentInParent<object>()
+        // object UnityEngine.GameObject.AddComponent<object>()
         // object UnityEngine.GameObject.GetComponent<object>()
         // object UnityEngine.GameObject.GetComponentInParent<object>()
         // object UnityEngine.GameObject.GetComponentInParent<object>(bool)
+        // object UnityEngine.JsonUtility.FromJson<object>(string)
         // object UnityEngine.Object.FindAnyObjectByType<object>()
+        // object UnityEngine.Object.Instantiate<object>(object)
         // YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetAsync<object>(string,uint)
     }
 }

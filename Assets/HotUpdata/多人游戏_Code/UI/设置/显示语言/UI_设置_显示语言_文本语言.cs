@@ -15,7 +15,6 @@ public class UI_设置_显示语言_文本语言 : MonoBehaviour
     public void OnEnable()
     {
         更新UI();
-        _多语言_切换语言 = FindAnyObjectByType<多语言_切换语言>();
     }
     private void 更新UI()
     {
@@ -29,6 +28,7 @@ public class UI_设置_显示语言_文本语言 : MonoBehaviour
     }
     public void OnClick()
     {
+        _多语言_切换语言 = FindAnyObjectByType<多语言_切换语言>();
         _data.显示语言.文本语言 = (Language) 文本语言.value;
         设置_设置文件.实例.保存数据();
         _多语言_切换语言.设置多语言语言();

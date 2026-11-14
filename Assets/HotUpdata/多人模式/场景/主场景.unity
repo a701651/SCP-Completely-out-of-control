@@ -2826,12 +2826,12 @@ GameObject:
   - component: {fileID: 1211653421}
   - component: {fileID: 1211653420}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: "\u7F16\u8F91\u6309\u94AE"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1211653419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3223,7 +3223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: f7156316e8d85314fafc85b627d91d5d, type: 3}
+  m_Texture: {fileID: 2800000, guid: 9ffeeee1accdc4b4faf2b3e27b226340, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0

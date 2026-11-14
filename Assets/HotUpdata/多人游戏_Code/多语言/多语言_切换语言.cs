@@ -13,7 +13,6 @@ public class 多语言_切换语言 : MonoBehaviour
     }
     public void 设置多语言语言()
     {
-        
         switch (_data.显示语言.文本语言)
         {
             case 多语言_支持语言列表.Language.中文简体:

@@ -103,10 +103,10 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u8BBE\u7F6E"
-        CollectorGUID: 56c973a701dc7d0459d777743dfe7bca
+      - CollectPath: "Assets/HotUpdata/\u591A\u4EBA\u6A21\u5F0F/\u591A\u8BED\u8A00\u63A7\u5236\u5668.prefab"
+        CollectorGUID: 7b5c5bda16fc84d429aa0ea050c54b31
         CollectorType: 0
-        AddressRuleName: AddressByFolderAndFileName
+        AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 

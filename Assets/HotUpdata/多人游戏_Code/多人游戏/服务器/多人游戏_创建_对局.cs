@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class 多人游戏_创建_对局 : MonoBehaviour
 {
+    public GameObject 占位相机;
     private 多人游戏管理器 _多人游戏管理器;
     void OnEnable()
     {
@@ -25,5 +26,6 @@ public class 多人游戏_创建_对局 : MonoBehaviour
             default:
                 break;
         }
+        占位相机.SetActive(false);
     }
 }
