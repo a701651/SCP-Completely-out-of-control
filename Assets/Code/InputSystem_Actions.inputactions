@@ -544,6 +544,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "开始演奏",
+                    "type": "Button",
+                    "id": "8e99894b-dff1-49fa-96a1-adffda932dfa",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -621,6 +630,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "打开背包",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a53142f7-a10c-4e32-a69a-29b95ab83e4a",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "开始演奏",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

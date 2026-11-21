@@ -15,8 +15,7 @@ public class 虚拟遥感_UI_遥感绑定 : MonoBehaviour, IBeginDragHandler, IE
     private RectTransform _rect;
     private Vector2 _遥感中心;          // 使用 anchoredPosition，避免世界坐标转换问题
     private Canvas _canvas;
-
-    public 多人_状态机_玩家_Root _root;
+    private 多人游戏_输入_控制器 _输入控制器;
     
     public event Action<Vector2> OnMove;
 
@@ -28,6 +27,7 @@ public class 虚拟遥感_UI_遥感绑定 : MonoBehaviour, IBeginDragHandler, IE
 
     private void OnEnable()
     {
+        _输入控制器 = FindAnyObjectByType<多人游戏_输入_控制器>();
         // 初始化中心点（基于 anchoredPosition）
         _遥感中心 = _rect.anchoredPosition;
         OnEndDrag(null);
@@ -93,9 +93,6 @@ public class 虚拟遥感_UI_遥感绑定 : MonoBehaviour, IBeginDragHandler, IE
 
     void 通知玩家发送输入(Vector2 输入)
     {
-        if (_root != null)
-        {
-            _root.更新移动输入(输入);
-        }
+        _输入控制器.更新移动输入(输入);
     }
 }
