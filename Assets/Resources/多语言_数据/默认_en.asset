@@ -137,6 +137,26 @@ MonoBehaviour:
     m_Localized: Backpack
     m_Metadata:
       m_Items: []
+  - m_Id: 2583891558178816
+    m_Localized: Remote Admin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2584310300712960
+    m_Localized: Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2584697044901888
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2584701658636288
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2633205504450560
+    m_Localized: Performance
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

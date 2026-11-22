@@ -10,6 +10,10 @@ public class 多人游戏_输入_控制器 : MonoBehaviour
     public event Action<Vector2> 视角;
     public event Action 跳跃;
     public event Action 开始演奏;
+    /// <summary>
+    /// 发送音符（类型,音符）
+    /// </summary>
+    public event Action<int,string> 发送音符;
     private InputSystem_Actions _inputActions;
     void OnEnable()
     {
@@ -76,7 +80,21 @@ public class 多人游戏_输入_控制器 : MonoBehaviour
 
     void OnMusicStart(InputAction.CallbackContext context)
     {
+        更新演奏();
+    }
+
+    public void 更新演奏()
+    {
         开始演奏?.Invoke();
+    }
+
+    #endregion
+
+    #region 发送音符
+
+    public void 更新发送音符(int _类型, string _音符)
+    {
+        发送音符?.Invoke(_类型, _音符);
     }
 
     #endregion

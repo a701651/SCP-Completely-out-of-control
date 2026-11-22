@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class 多人游戏_演奏_钢琴_按钮 : MonoBehaviour,
     IPointerDownHandler, IPointerUpHandler
 {
+    private 多人游戏_输入_控制器 _输入控制器;
     private 多人游戏_演奏_钢琴_定义音符 _音符定义;
 
     private AudioSource _音频源;
@@ -49,6 +50,7 @@ public class 多人游戏_演奏_钢琴_按钮 : MonoBehaviour,
 
     private void Awake()
     {
+        _输入控制器 = FindAnyObjectByType<多人游戏_输入_控制器>();
         _原始缩放 = transform.localScale;
         _音符定义 = GetComponentInParent<多人游戏_演奏_钢琴_定义音符>();
 
@@ -149,12 +151,16 @@ public class 多人游戏_演奏_钢琴_按钮 : MonoBehaviour,
             return;
 
         // 再次按下时重新播放
-        _音频源.Stop();
+        /*_音频源.Stop();
 
         _音频源.clip = _音频;
         _音频源.loop = false;
         _音频源.Play();
-        Debug.Log("播放音符");
+        Debug.Log("播放音符");*/
+        if (_输入控制器 != null)
+        {
+            _输入控制器.更新发送音符(0, 音符名称);
+        }
     }
 
     public void 播放一次()

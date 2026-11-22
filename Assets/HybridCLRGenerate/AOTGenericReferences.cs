@@ -8,6 +8,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
         "Mirror.dll",
         "System.Core.dll",
         "System.dll",
+        "Unity.InputSystem.dll",
         "Unity.ResourceManager.dll",
         "UnityEngine.CoreModule.dll",
         "UnityEngine.JSONSerializeModule.dll",
@@ -166,6 +167,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // Mirror.Writer<uint>
     // Mirror.Writer<ulong>
     // Mirror.Writer<ushort>
+    // System.Action<UnityEngine.Color>
     // System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>
     // System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,object>
     // System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
@@ -247,31 +249,43 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // System.Action<object,ulong>
     // System.Action<object,ushort>
     // System.Action<object>
+    // System.Collections.Generic.ArraySortHelper<UnityEngine.Color>
     // System.Collections.Generic.ArraySortHelper<object>
+    // System.Collections.Generic.Comparer<UnityEngine.Color>
     // System.Collections.Generic.Comparer<object>
     // System.Collections.Generic.EqualityComparer<UnityEngine.Vector2>
     // System.Collections.Generic.EqualityComparer<UnityEngine.Vector3>
     // System.Collections.Generic.EqualityComparer<object>
     // System.Collections.Generic.HashSet.Enumerator<object>
     // System.Collections.Generic.HashSet<object>
+    // System.Collections.Generic.ICollection<UnityEngine.Color>
     // System.Collections.Generic.ICollection<object>
+    // System.Collections.Generic.IComparer<UnityEngine.Color>
     // System.Collections.Generic.IComparer<object>
+    // System.Collections.Generic.IEnumerable<UnityEngine.Color>
     // System.Collections.Generic.IEnumerable<object>
+    // System.Collections.Generic.IEnumerator<UnityEngine.Color>
     // System.Collections.Generic.IEnumerator<object>
     // System.Collections.Generic.IEqualityComparer<object>
+    // System.Collections.Generic.IList<UnityEngine.Color>
     // System.Collections.Generic.IList<object>
     // System.Collections.Generic.LinkedList.Enumerator<object>
     // System.Collections.Generic.LinkedList<object>
     // System.Collections.Generic.LinkedListNode<object>
+    // System.Collections.Generic.List.Enumerator<UnityEngine.Color>
     // System.Collections.Generic.List.Enumerator<object>
+    // System.Collections.Generic.List<UnityEngine.Color>
     // System.Collections.Generic.List<object>
+    // System.Collections.Generic.ObjectComparer<UnityEngine.Color>
     // System.Collections.Generic.ObjectComparer<object>
     // System.Collections.Generic.ObjectEqualityComparer<UnityEngine.Vector2>
     // System.Collections.Generic.ObjectEqualityComparer<UnityEngine.Vector3>
     // System.Collections.Generic.ObjectEqualityComparer<object>
     // System.Collections.Generic.Stack.Enumerator<object>
     // System.Collections.Generic.Stack<object>
+    // System.Collections.ObjectModel.ReadOnlyCollection<UnityEngine.Color>
     // System.Collections.ObjectModel.ReadOnlyCollection<object>
+    // System.Comparison<UnityEngine.Color>
     // System.Comparison<object>
     // System.Func<object,Mirror.AddPlayerMessage>
     // System.Func<object,Mirror.ChangeOwnerMessage>
@@ -347,6 +361,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // System.Func<object,ulong>
     // System.Func<object,ushort>
     // System.Func<object>
+    // System.Predicate<UnityEngine.Color>
     // System.Predicate<object>
     // System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<object>
     // System.Runtime.CompilerServices.ConfiguredTaskAwaitable<object>
@@ -356,6 +371,10 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
     // System.Threading.Tasks.TaskCompletionSource<object>
     // System.Threading.Tasks.TaskFactory.<>c__DisplayClass35_0<object>
     // System.Threading.Tasks.TaskFactory<object>
+    // UnityEngine.InputSystem.InputBindingComposite<UnityEngine.Vector2>
+    // UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>
+    // UnityEngine.InputSystem.InputProcessor<UnityEngine.Vector2>
+    // UnityEngine.InputSystem.Utilities.InlinedArray<object>
     // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass60_0<object>
     // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass61_0<object>
     // UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase<object>
@@ -375,18 +394,30 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
         // System.Void Mirror.NetworkBehaviour.SetSyncVar<UnityEngine.Vector3>(UnityEngine.Vector3,UnityEngine.Vector3&,ulong)
         // bool Mirror.NetworkBehaviour.SyncVarEqual<UnityEngine.Vector2>(UnityEngine.Vector2,UnityEngine.Vector2&)
         // bool Mirror.NetworkBehaviour.SyncVarEqual<UnityEngine.Vector3>(UnityEngine.Vector3,UnityEngine.Vector3&)
+        // bool System.Enum.TryParse<int>(string,bool,int&)
+        // bool System.Enum.TryParse<int>(string,int&)
         // object& System.Runtime.CompilerServices.Unsafe.As<object,object>(object&)
         // System.Void* System.Runtime.CompilerServices.Unsafe.AsPointer<object>(object&)
+        // System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<UnityEngine.Vector2>(UnityEngine.Vector2&)
+        // int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<UnityEngine.Vector2>()
         // object UnityEngine.Component.GetComponent<object>()
         // object UnityEngine.Component.GetComponentInChildren<object>(bool)
         // object UnityEngine.Component.GetComponentInParent<object>()
         // object UnityEngine.GameObject.AddComponent<object>()
         // object UnityEngine.GameObject.GetComponent<object>()
+        // object UnityEngine.GameObject.GetComponentInChildren<object>()
+        // object UnityEngine.GameObject.GetComponentInChildren<object>(bool)
         // object UnityEngine.GameObject.GetComponentInParent<object>()
         // object UnityEngine.GameObject.GetComponentInParent<object>(bool)
+        // bool UnityEngine.GameObject.TryGetComponent<object>(object&)
+        // UnityEngine.Vector2 UnityEngine.InputSystem.InputAction.CallbackContext.ReadValue<UnityEngine.Vector2>()
+        // UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ApplyProcessors<UnityEngine.Vector2>(int,UnityEngine.Vector2,UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>)
+        // UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ReadValue<UnityEngine.Vector2>(int,int,bool)
         // object UnityEngine.JsonUtility.FromJson<object>(string)
         // object UnityEngine.Object.FindAnyObjectByType<object>()
         // object UnityEngine.Object.Instantiate<object>(object)
+        // object UnityEngine.Object.Instantiate<object>(object,UnityEngine.Transform)
+        // object UnityEngine.Object.Instantiate<object>(object,UnityEngine.Transform,bool)
         // YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetAsync<object>(string,uint)
     }
 }

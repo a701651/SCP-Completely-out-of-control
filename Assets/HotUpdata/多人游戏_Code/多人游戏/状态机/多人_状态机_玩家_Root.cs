@@ -12,6 +12,7 @@ public class 多人_状态机_玩家_Root : NetworkBehaviour
     public float 移动速度 = 10f;
     
     private 多人游戏_输入_控制器 _输入控制器;
+    private AudioSource _音频源;
     
     [SyncVar]
     public Vector2 移动输入;
@@ -30,6 +31,7 @@ public class 多人_状态机_玩家_Root : NetworkBehaviour
         _输入控制器.移动 += 更新移动输入;
         _输入控制器.视角 += 更新视角输入;
         _输入控制器.跳跃 += Comm玩家跳跃;
+        _输入控制器.发送音符 += Comm发送音符;
     }
     public void 更新移动输入(Vector2 _移动输入)
     {
@@ -63,6 +65,26 @@ public class 多人_状态机_玩家_Root : NetworkBehaviour
     public void Comm玩家跳跃()
     {
         跳跃?.Invoke();
+    }
+
+    [Command]
+    public void Comm发送音符(int _类型, string _音符)
+    {
+        Rpc接受音符(_类型, _音符);
+    }
+    [TargetRpc]
+    public void Rpc接受音符(int _类型, string _音符)
+    {
+        var 音符定义 = FindAnyObjectByType<多人游戏_演奏_钢琴_定义音符>();
+        AudioClip 音频 = 音符定义.音符列表.Find(x => x.名称 == _音符)?.音频;
+        if (音频 != null)
+        {
+            if (_音频源 == null)
+            {
+                _音频源 = gameObject.AddComponent<AudioSource>();
+            }
+            _音频源.PlayOneShot(音频);
+        }
     }
 
     private void Update()
