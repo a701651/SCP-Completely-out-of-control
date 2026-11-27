@@ -657,6 +657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513376990}
   - component: {fileID: 513376989}
+  - component: {fileID: 513376991}
   m_Layer: 0
   m_Name: "UI\u5C42\u63A7\u5236\u5668"
   m_TagString: Untagged
@@ -693,6 +694,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &513376991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513376988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587f0120d8d624d4d961f63012da621f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDebugInfo: 0
+  fontSize: 13
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  backgroundColor: {r: 0, g: 0, b: 0, a: 0.72}
+  headerColor: {r: 0.4, g: 0.85, b: 1, a: 1}
+  margin: {x: 10, y: 10}
+  maxWidth: 460
+  refreshInterval: 0.2
+  heavyRefreshInterval: 2
+  groupPerformance: 1
+  groupMemory: 1
+  groupObjects: 1
+  groupTime: 1
+  groupScene: 1
+  groupSystem: 1
+  groupRendering: 1
+  groupScreen: 1
+  groupApp: 1
+  groupNetwork: 1
+  groupAudio: 1
+  groupInput: 1
+  groupCamera: 1
+  groupLogs: 1
+  maxLogs: 10
 --- !u!1 &516866646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3769,7 +3806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2046479471
 MonoBehaviour:
   m_ObjectHideFlags: 0

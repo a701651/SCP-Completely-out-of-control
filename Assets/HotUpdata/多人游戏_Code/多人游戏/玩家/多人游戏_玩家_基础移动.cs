@@ -1,8 +1,11 @@
+using System;
 using Mirror;
 using UnityEngine;
 
 public class 多人游戏_玩家_基础移动 : NetworkBehaviour
 {
+    public Camera 摄像机;
+    public AudioListener 音频监听器;
     // ---------- 引用 ----------
     private 多人_状态机_玩家_Root _root;
     private CharacterController _controller;
@@ -12,8 +15,10 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
     {
         get
         {
-            if (_root == null)
+            if (!_root)
+            {
                 return Vector2.zero;
+            }
 
             _输入 = _root.移动输入;
             return _输入;
@@ -29,8 +34,10 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
     {
         get
         {
-            if (_root == null)
+            if (!_root)
+            {
                 return Vector2.zero;
+            }
 
             _视角输入 = _root.视角输入;
             return _视角输入;
@@ -79,6 +86,8 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
     {
         _root = GetComponentInParent<多人_状态机_玩家_Root>();
         _controller = GetComponent<CharacterController>();
+        摄像机 = GetComponentInChildren<Camera>();
+        音频监听器 = 摄像机.GetComponent<AudioListener>();
 
         if (_root == null)
             Debug.LogError("[基础移动] 状态机根节点未指定！");
@@ -90,6 +99,15 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
             Debug.LogError("[基础移动] 视角节点未指定！");
         
         _root.跳跃 += 跳跃;
+        _root.视角切换 += 切换视角;
+        
+        切换视角();
+    }
+
+    private void OnDisable()
+    {
+        _root.跳跃 -= 跳跃;
+        _root.视角切换 -= 切换视角;
     }
 
     private void LateUpdate()
@@ -164,6 +182,8 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
 
         // ---------- 水平移动 ----------
         Vector2 当前输入 = 输入;
+        
+        /*Debug.Log($"当前输入: x:{当前输入.x}, y:{当前输入}");*/
 
         if (当前输入.sqrMagnitude > 1f)
             当前输入.Normalize();
@@ -224,5 +244,16 @@ public class 多人游戏_玩家_基础移动 : NetworkBehaviour
             return;
 
         垂直速度 = 跳跃速度;
+    }
+
+    private void 切换视角()
+    {
+        if (!_root)
+        {
+            return;
+        }
+
+        摄像机.enabled = _root.是否展示视角;
+        音频监听器.enabled = _root.是否展示视角;
     }
 }
