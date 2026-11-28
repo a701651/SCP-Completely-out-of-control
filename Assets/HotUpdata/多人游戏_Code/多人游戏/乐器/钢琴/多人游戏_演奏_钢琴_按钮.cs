@@ -1,4 +1,5 @@
 
+/*
 using System;
 using System.Collections;
 using TMPro;
@@ -156,7 +157,7 @@ public class 多人游戏_演奏_钢琴_按钮 : MonoBehaviour,
         _音频源.clip = _音频;
         _音频源.loop = false;
         _音频源.Play();
-        Debug.Log("播放音符");*/
+        Debug.Log("播放音符");#1#
         if (_输入控制器 != null)
         {
             _输入控制器.更新发送音符(0, 音符名称);
@@ -301,3 +302,4 @@ public class 多人游戏_演奏_钢琴_按钮 : MonoBehaviour,
             当前触发按钮, out _键码);
     }
 }
+*/

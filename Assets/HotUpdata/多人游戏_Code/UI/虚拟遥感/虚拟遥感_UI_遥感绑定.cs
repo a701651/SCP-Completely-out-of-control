@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -95,4 +95,4 @@ public class 虚拟遥感_UI_遥感绑定 : MonoBehaviour, IBeginDragHandler, IE
     {
         _输入控制器.更新移动输入(输入);
     }
-}
+}*/

@@ -1,3 +1,4 @@
+/*
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,3 +32,4 @@ public class 多人游戏_演奏_钢琴_初始化按钮 : MonoBehaviour
         }
     }
 }
+*/
